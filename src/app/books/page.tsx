@@ -30,7 +30,7 @@ const BooksPage = async () => {
   const books: BookType[] = await getBooks();
 
   return (
-    <div className="container mx-auto mt-20">
+    <div className="max-w-7xl mx-auto mt-20">
       <h2 className="text-center text-[35px] font-bold">
         Books
       </h2>
