@@ -10,7 +10,7 @@ export interface PageProps {
 }    
 export const getBooks = async () => {
   try {
-    const baseUrl = process.env.NEXT_PUBLIC_SERVER_BASE_URL;
+    const baseUrl = process.env.SERVER_BASE_URL;
 
     if (!baseUrl) {
       throw new Error("SERVER_BASE_URL is not configured");
