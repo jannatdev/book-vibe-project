@@ -12,8 +12,8 @@ const Navbar = () => {
     </>
     return (
        
-    <div className="container mx-auto px-4">
-    <div className="navbar min-h-20 border-b border-gray-200 bg-white px-0">
+    <div className="max-w-7xl mx-auto px-5">
+    <div className="navbar min-h-20 border-b border-gray-200 bg-white px-0 flex items-center justify-between gap-80">
 
         {/* Left - Logo & Brand */}
         <div className="navbar-start">
@@ -47,7 +47,7 @@ const Navbar = () => {
             </ul>
         </div>
 
-        <div className="flex items-center gap-2">
+        <div className="flex items-center justify-between gap-10">
 
             <Link href={'/'} className='flex items-center gap-2'>
               <Image
@@ -69,7 +69,7 @@ const Navbar = () => {
         </div>
 
         {/* Center - Navigation */}
-        <div className="navbar-center hidden lg:flex">
+        <div className="navbar-center hidden md:flex ">
         <ul className="menu menu-horizontal gap-2">
             {link}
         </ul>

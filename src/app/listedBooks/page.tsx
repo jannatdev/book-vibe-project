@@ -3,7 +3,7 @@
 import { BookType } from '@/book.type';
 import { BookContext } from '@/Contex/BookProvider';
 import Image from 'next/image';
-import React, { useContext, useState } from 'react';
+import  { useContext, useState } from 'react';
 import { BiStar } from 'react-icons/bi';
 
 const ListedBooksPage = () => {
@@ -36,7 +36,7 @@ const sortedReadBooks = sortBooks(readBooks);
 const sortedWishlist = sortBooks(whishlist);
 
     return (
-        <div className='container mx-auto '>
+        <div className='max-w-7xl mx-auto '>
             <h2 className='text-3xl font-bold text-center py-6 '>Listed Books</h2>
 
             <div className='my-5 text-center'>

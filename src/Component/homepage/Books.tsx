@@ -24,7 +24,7 @@ export interface BooksProps {
     const books = await getBooks();
 
    return (
-        <div className='mt-20 conatainer mx-auto'>
+        <div className='mt-20 max-w-7xl mx-auto'>
             <h2 className='text-[35px] font-bold text-center'> Books </h2>
             <div className="grid grid-cols-3 gap-20 mt-6">
               {books.slice(0,9).map((book:BookType)=> <BookCard key={book.bookId} book={book}></BookCard>

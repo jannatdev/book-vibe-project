@@ -4,7 +4,7 @@ import bannerImage from '@/app/asset/pngwing 1.jpg'
 
 const Banner = () => {
     return (
-       <div className="container mx-auto px-4">
+       <div className="max-w-7xl mx-auto px-4">
   <div className="flex flex-col md:flex-row items-center justify-between gap-10 bg-gray-100 rounded-2xl px-8 md:px-16 py-10 md:py-14">
 
     {/* Left Content */}

@@ -13,7 +13,7 @@ export const getBooks = async () => {
 
     const data = await res.json();
 
-    console.log("Books data:", data);
+   
 
     return data;
   } catch (error) {
