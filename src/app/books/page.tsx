@@ -3,8 +3,15 @@ import BookCard from "@/Component/Share/BookCard";
 
 export const getBooks = async () => {
   try {
+    const baseUrl = process.env.SERVER_BASE_URL;
+
+    if (!baseUrl) {
+      throw new Error("SERVER_BASE_URL is not configured");
+    }
+
     const res = await fetch(
-      `${process.env.SERVER_BASE_URLL}/booksData.json`
+      `${baseUrl.replace(/\/$/, "")}/booksData.json`,
+      { cache: "no-store" }
     );
 
     if (!res.ok) {
@@ -12,12 +19,9 @@ export const getBooks = async () => {
     }
 
     const data = await res.json();
-
-   
-
     return data;
   } catch (error) {
-    console.error("Error data fetching:", error);
+    console.error("Error fetching books:", error);
     return [];
   }
 };
