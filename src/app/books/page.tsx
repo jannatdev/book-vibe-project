@@ -4,7 +4,7 @@ import BookCard from "@/Component/Share/BookCard";
 export const getBooks = async () => {
   try {
     const res = await fetch(
-      `${process.env.NEXT_PUBLIC_SERVER_BASE_URL}/booksData.json`
+      `${process.env.SERVER_BASE_URLL}/booksData.json`
     );
 
     if (!res.ok) {
